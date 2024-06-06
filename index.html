@@ -1,59 +1,83 @@
 <!DOCTYPE html>
-<!-- Coding by CodingNepal || www.codingnepalweb.com -->
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Responsive Website in HTML CSS</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="../custom-scripts.js" defer></script>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Ltd</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            padding: 2rem;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        main p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #007acc;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #005fa3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guessing Ltd</h1>
+    </header>
     <main>
-      <!-- Header Start -->
-      <header>
-        <nav class="nav container">
-          <h2 class="nav_logo"><a href="#">CodingNepal</a></h2>
-
-          <ul class="menu_items">
-            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
-            <li><a href="#" class="nav_link">Home</a></li>
-            <li><a href="#" class="nav_link">About</a></li>
-            <li><a href="#" class="nav_link">Service</a></li>
-            <li><a href="#" class="nav_link">Project</a></li>
-            <li><a href="#" class="nav_link">Contact</a></li>
-          </ul>
-          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
-        </nav>
-      </header>
-      <!-- Header End -->
-
-      <!-- Hero Start -->
-      <section class="hero">
-        <div class="row container">
-          <div class="column">
-            <h2>Top free tool and extension to <br />radiply grow you business</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, architecto? Consectetur enim obcaecati velit quibusdam iure, perspiciatis accusantium, voluptatibus possimus cum voluptates dolorum optio ab vitae. Praesentium voluptas quia voluptates at aperiam aliquid vitae autem!</p>
-            <div class="buttons">
-              <button class="btn">Read More</button>
-              <button class="btn">Contact Us</button>
-            </div>
-          </div>
-          <div class="column">
-            <img src="images/hero.png" alt="heroImg" class="hero_img" />
-          </div>
-        </div>
-        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
-      </section>
-      <!-- Hero End-->
+        <h2>Welcome to Guessing</h2>
+        <p>At Guessing Ltd, we specialize in providing innovative solutions to help you succeed. Our team is dedicated to delivering top-notch services that meet your needs and exceed your expectations.</p>
+        <a href="/invite" class="btn">Join Our Community</a>
     </main>
-
-    <script>
-      const header = document.querySelector("header");
-      const menuToggler = document.querySelectorAll("#menu_toggle");
-
-      menuToggler.forEach(toggler => {
-        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
-      });
-    </script>
-  </body>
+    <footer>
+        <p>&copy; 2024 Guessing Ltd. All rights reserved.</p>
+    </footer>
+</body>
 </html>
